@@ -1,0 +1,23 @@
+<title>Edit your Recipe</title>
+
+    <form method="POST" action="/recipes/<%= @dream.id %>">
+        <input type="hidden" name="_method" value="PATCH">
+
+        <h3>Edit Title</h3>
+        <p><input type="text" name="recipe[title]" value="<%= @recipe.title %>" required /></p>
+
+        <h3>Edit Ingredients</h3>
+        <p><input type="text" name="recipe[ingredients]" style="width: 500px; height: 40px;" value="<%= @recipe.ingredients %>" required /></p>
+
+        <h3>Edit Recipe Steps</h3>
+        <p><input type="text" name="recipe[steps]" style="width: 500px; height: 40px;" value="<%= @recipe.steps %>" required /></p>
+
+        <h3>Edit Recipe Cooktime</h3>
+        <p><input type="text" name="recipe[cooktime]" value="<%= @recipe.cooktime %>" required /></p>
+
+        <h3>Edit Entry Date</h3>
+        <p><input type="datetime-local" name="recipe[entry_date]" value="<%= @recipe.steps %>" required /></p>
+
+        <p><input type="submit" value="Update Recipe" /></p>
+
+    </form>

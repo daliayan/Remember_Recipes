@@ -1,0 +1,23 @@
+<h1><strong>UPLOAD YOUR RECIPE BELOW:</strong></h1>
+
+<form action="/recipes" method="POST">
+
+    <label for="title" style="font-size: 13pt;">Recipe Title:</label><br>
+    <p><input type="text" name="title" placeholder="Enter Recipe Title Here" required></p><br>
+
+    <label for="ingredients" style="font-size: 13pt;">Ingredients:</label><br>
+    <p><input type="text" name="ingredients" placeholder="Enter Ingredients Here" required></p><br>
+
+    <label for="steps" style="font-size: 13pt;">Steps to complete recipe:</label><br>
+    <p><input type="text" name="steps" placeholder="Enter Recipe Steps Here" required></p><br>
+
+    <label for="cooktime" style="font-size: 13pt;">Cooktime:</label><br>
+    <p><input type="integer" name="cooktime" placeholder="Enter Cooktime Here" required></p><br>
+
+    <label for="entry_date" style="font-size: 13pt;">Entry Date:</label><br>
+    <p><input type="datetime-local" name="entry_date" required></p><br>
+
+    <input type="submit" value="Submit Recipe"><br>
+
+</form>
+<br>
